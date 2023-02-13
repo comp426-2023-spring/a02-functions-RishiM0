@@ -7,7 +7,7 @@
     "test": "node cli.js -n 35.92 -w 79.05 -z America/New_York"
   },
   "repository": {
-    "type": "git",
+    "type": "module", 
     "url": "git+https://github.com/comp426-2023-spring/a02-functions-RishiM0.git"
   },
   "author": "RishiM0",
