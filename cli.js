@@ -45,12 +45,19 @@ const data = await response.json();
 
 const days = args.d;
 
-if (days == 0) {
-  console.log( response.daily_precipitation_hours[days] + "today.")
-} else if (days > 1) {
-  console.log( response.daily_precipitation_hours[days] + "in " + days + " days.")
+let need_galoshes = '';
+if (response.daily_precipitation_hours[days] > 1){
+    need_galoghes = response.daily_precipitation_hours[days] + 'is expected, you will need galoshes ';
 } else {
-  console.log( response.daily_precipitation_hours[days] + "tomorrow.")
+    need_galoshes = response.daily_precipitation_hours[days] + 'is expected, you will not need galoshes ';
+}
+
+if (days == 0) {
+  console.log( need_galoshes + "today.")
+} else if (days > 1) {
+  console.log( need_galoshes + "in " + days + " days.")
+} else {
+  console.log( need_galoshes + "tomorrow.")
 }
 
 if (args.j) {
