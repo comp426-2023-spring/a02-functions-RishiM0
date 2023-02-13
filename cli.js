@@ -59,11 +59,11 @@ let days = args.d;
 //}
 
 if (days == 0) {
-  console.log( data.daily_precipitation_hours[days] + " " +  "today.");
+  console.log( data.daily.precipitation_hours[0] + " " +  "today.");
 } else if (days == 1) {
-    console.log( data.daily_precipitation_hours[days] + " " +  "tomorrow.");
+    console.log( data.daily.precipitation_hours[1] + " " +  "tomorrow.");
 } else {
-  console.log( data.daily_precipitation_hours[days] + " " + "tomorrow.");
+  console.log( data.daily.precipitation_hours[days] + " " + "tomorrow.");
 }
 
 if (args.j) {
