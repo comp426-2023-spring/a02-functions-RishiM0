@@ -51,7 +51,7 @@ let days = args.d;
 //    days = args.d;
 //}
 
-let need_galoshes = data.daily.precipitation_hours[days];
+//let need_galoshes = data.daily.precipitation_hours[days];
 //if (data.daily.precipitation_hours[days] > 1.0){
 //    need_galoghes = data.daily.precipitation_hours[days] + ' is expected, you will need galoshes ';
 //} else {
@@ -59,11 +59,11 @@ let need_galoshes = data.daily.precipitation_hours[days];
 //}
 
 if (days == 0) {
-  console.log( need_galoshes + "today.");
+  console.log( data.daily.precipitation_hours[days] + " " +  "today.");
 } else if (days == 1) {
-    console.log( need_galoshes + "tomorrow.");
+    console.log( data.daily.precipitation_hours[days] + " " +  "tomorrow.");
 } else {
-  console.log( need_galoshes + "tomorrow.");
+  console.log( data.daily.precipitation_hours[days] + " " + "tomorrow.");
 }
 
 if (args.j) {
