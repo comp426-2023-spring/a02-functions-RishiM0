@@ -19,10 +19,13 @@ if (args.h) {
     process.exit(0);
 }
 
-const timezone = moment.tz.guess();
+const timezone1 = moment.tz.guess();
+let timezone;
 
 if (args.z){
     timezone = args.z;
+} else {
+    timezone = timezone1;
 }
 
 let longitude;
