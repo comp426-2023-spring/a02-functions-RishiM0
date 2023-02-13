@@ -66,10 +66,10 @@ let days = args.d;
 
 if (days == 0) {
   console.log( data.daily.precipitation_hours[0] + " " +  "today.");
-} else if (days == 1) {
-    console.log( data.daily.precipitation_hours[1] + " " +  "tomorrow.");
+} else if (days > 1) {
+    console.log( data.daily.precipitation_hours[days] + " " + "in " + days + " days.");
 } else {
-  console.log( data.daily.precipitation_hours[days] + " " + "in " + days + " days.");
+    console.log( data.daily.precipitation_hours[1] + " " +  "tomorrow.");
 }
 
 if (args.j) {
