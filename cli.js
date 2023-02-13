@@ -53,9 +53,9 @@ if (args.d){
 
 let need_galoshes = '';
 if (response.daily_precipitation_hours[days] > 1){
-    need_galoghes = response.daily_precipitation_hours[days] + 'is expected, you will need galoshes ';
+    need_galoghes = data.daily.precipitation_hours[days] + 'is expected, you will need galoshes ';
 } else {
-    need_galoshes = response.daily_precipitation_hours[days] + 'is expected, you will not need galoshes ';
+    need_galoshes = data.daily.precipitation_hours[days] + 'is expected, you will not need galoshes ';
 }
 
 if (days == 0) {
