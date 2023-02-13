@@ -46,10 +46,10 @@ if (args.e) {
 const response = await fetch('https://api.open-meteo.com/v1/forecast?latitude=' + latitude + '&longitude=' + longitude + '&daily=precipitation_hours&current_weather=true'+ '&timezone=' + timezone);
 const data = await response.json();
 
-let days = 0;
-if (args.d){
-    days = args.d;
-}
+let days = args.d;
+//if (args.d){//
+//    days = args.d;
+//}
 
 let need_galoshes = '';
 if (data.daily.precipitation_hours[days] > 1){
