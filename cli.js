@@ -59,11 +59,11 @@ if (data.daily.precipitation_hours[days] > 1){
 }
 
 if (days == 0) {
-  console.log( need_galoshes + "today.")
-} else if (days > 1) {
-  console.log( need_galoshes + "in " + days + " days.")
+  console.log( need_galoshes + "today.");
+} else if (days == 1) {
+    console.log( need_galoshes + "tomorrow.");
 } else {
-  console.log( need_galoshes + "tomorrow.")
+  console.log( need_galoshes + "tomorrow.");
 }
 
 if (args.j) {
